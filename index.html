@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Frels</title>
+  <!-- Elegant fonts from Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    /* Reset and base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Raleway', sans-serif;
+      background: url('bg-3.jpg') no-repeat center center fixed; 
+      background-size: cover;
+      color: #fff;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+    /* Main container overlay for legibility */
+    .container {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+      background: rgba(0, 0, 0, 0.5);
+    }
+    /* Header styling for the logo */
+    .header {
+      position: absolute;
+      top: 240px;
+      width: 100%;
+      text-align: center;
+      z-index: 10;
+    }
+    /* Logo styling */
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 4rem;
+      letter-spacing: 2px;
+      margin-bottom: 1rem;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    }
+    /* Firm statement styling */
+    .statement {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+      max-width: 800px;
+      font-weight: 300;
+    }
+    /* Theme icon container */
+    .theme-icons {
+      display: flex;
+      justify-content: center;
+      margin-top: 15rem;
+    }
+    .theme-icons img {
+      width: 80px;
+      height: 80px;
+      margin: 0 1rem;
+      filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.6));
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    /* Scroll down link styling */
+    .scroll {
+      position: absolute;
+      bottom: 20px;
+      font-size: 1rem;
+      cursor: pointer;
+      animation: bounce 2s infinite;
+    }
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+      40% { transform: translateY(-10px); }
+      60% { transform: translateY(-5px); }
+    }
+    /* Contact section styling */
+    .contact {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #f7f7f7;
+      color: #333;
+      padding: 2rem;
+    }
+    
+    .contact-card {
+      background: white;
+      padding: 3rem 4rem;
+      border-radius: 12px;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      max-width: 500px;
+      width: 100%;
+      transition: transform 0.3s ease;
+    }
+    .contact-card:hover {
+      transform: translateY(-5px);
+    }
+    
+    .contact-card h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .contact-card p {
+      font-size: 1.1rem;
+      font-weight: 300;
+      margin-bottom: 1.5rem;
+      color: #555;
+    }
+    
+    .email-button {
+      display: inline-block;
+      font-family: 'Raleway', sans-serif;
+      font-size: 1rem;
+      text-decoration: none;
+      color: #0097D8;
+      background: #ffffff;
+      padding: 0.75rem 1.5rem;
+      border-radius: 25px;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+    
+    .email-button:hover {
+      background: #ffffff;
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero Section -->
+  <div class="container">
+    <!-- Header Section with Logo -->
+    <header class="header">
+      <div class="logo">The Frels</div>
+    </header>
+    <div class="statement"></div>
+    <div class="theme-icons">
+      <!-- Replace with your themed icon images -->
+      <img src="thestar_2025.jpg" alt="The Star">
+      <img src="thetree_2025.jpg" alt="Willow Tree">
+      <img src="thebird_2025.jpg" alt="Beautiful Bird">
+    </div>
+    <div class="scroll">
+      <a href="#contact" style="color: #fff;">Contact &darr;</a>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="contact-card">
+      <h2 style="color:#0097D8;">Contact Us</h2>
+      <p style="color:#314962;"">We'd love to hear from you.</p>
+      <a class="email-button" href="mailto:info@thefree.com">info@thefrels.com</a>
+    </div>
+  </section>
+</body>
+</html>
